@@ -119,7 +119,7 @@
 /* 118 */     long numFiles = this.conf.getLong("createSampleData.numFiles", 5L);
 /* 119 */     long fileSize = this.conf.getLong("createSampleData.fileSize", 104857600L);
 /* 120 */     String jobName = this.conf.get("createSampleData.baseJobName", "CreateSampleData");
-/* 121 */     String tmpPathString = this.conf.get("createSampleData.tmpDir", "hdfs:///tmp/createSampleData");
+/* 121 */     String tmpPathString = this.conf.get("createSampleData.tmpDir", "maprfs:///tmp/createSampleData");
 /* 122 */     String inputPathString = this.conf.get("createSampleData.workingInputDir", join(tmpPathString, "input"));
 /* 123 */     String outputPathString = this.conf.get("createSampleData.workingOutputDir", join(tmpPathString, "output"));
 /*     */ 

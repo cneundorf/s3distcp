@@ -8,6 +8,14 @@
 	<packaging>jar</packaging>
 	<name>s3distcp</name>
 	<description>A fast copy utility to/from S3 and HDFS</description>
+<repositories>
+  <repository>
+      <id>mapr-releases</id>
+      <url>http://repository.mapr.com/maven/</url>
+      <snapshots><enabled>false</enabled></snapshots>
+      <releases><enabled>true</enabled></releases>
+    </repository>
+</repositories>
 
 	<build>
 		<finalName>${project.name}-${project.version}</finalName>

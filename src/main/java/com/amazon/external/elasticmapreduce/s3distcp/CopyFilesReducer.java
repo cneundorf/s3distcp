@@ -86,7 +86,7 @@
 /*  93 */     this.conf = conf;
 /*  94 */     int queueSize = conf.getInt("s3DistCp.copyfiles.mapper.queueSize", 10);
 /*  95 */     int numWorkers = conf.getInt("s3DistCp.copyfiles.mapper.numWorkers", 5);
-/*  96 */     this.tempDir = (conf.get("s3DistCp.copyfiles.reducer.tempDir", "hdfs:///tmp") + "/" + "tempspace");
+/*  96 */     this.tempDir = (conf.get("s3DistCp.copyfiles.reducer.tempDir", "maprfs:///tmp") + "/" + "tempspace");
 /*  97 */     this.bufferSize = conf.getInt("s3DistCp.copyfiles.mapper.bufferSize", 1048576);
 /*  98 */     this.targetSize = conf.getLong("s3DistCp.copyfiles.reducer.targetSize", 9223372036854775807L);
 /*  99 */     this.outputCodec = conf.get("s3DistCp.copyfiles.reducer.outputCodec").toLowerCase();

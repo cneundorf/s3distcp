@@ -225,7 +225,7 @@
 /*     */ 
 /* 546 */     String tempDirRoot = job.get("s3DistCp.copyfiles.reducer.tempDir", options.getTmpDir());
 /* 547 */     if (tempDirRoot == null) {
-/* 548 */       tempDirRoot = "hdfs:///tmp";
+/* 548 */       tempDirRoot = "maprfs:///tmp";
 /*     */     }
 /*     */ 
 /* 551 */     tempDirRoot = tempDirRoot + "/" + UUID.randomUUID();
